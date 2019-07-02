@@ -28,6 +28,7 @@
   * API extension: added `WorldSnapshot` that contains a list of `ActorSnapshot`, allows capturings a "still image" of the world at a single frame
   * API extension: `world.tick()` now synchronizes with the simulator and returns the id of the newly started frame
   * API extension: `world.apply_settings(settings)` now synchronizes with the simulator and returns the id of the frame when the settings took effect
+  * API extension: allow setting fixed frame-rate from client-side, now is part of `carla.WorldSettings`
   * API change: Rename `frame_count` and `frame_number` as `frame`, old members are kept as deprecated
   * API change: `world.wait_for_tick()` now returns a `carla.WorldSnapshot`
   * API change: the callback of `world.on_tick(callback)` now receives a `carla.WorldSnapshot`
@@ -62,7 +63,7 @@
   * New Vehicle Audi Etron. With 25.000 Tris and their Lods.
   * New material for Mustang. New material that will allow us to improve all the materials of the cars.
   * New custom weather for each map
-  * Improve weather - Tweak values 
+  * Improve weather - Tweak values
   * Change the weight of cars. All cars have been compared with the real to have a feedback more real.
   * Add Navigations maps for pedestrian
   * Fixed invisible wall
